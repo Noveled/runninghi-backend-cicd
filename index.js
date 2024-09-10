@@ -24,4 +24,4 @@ app.use(require("./routes/updateRoutes"));
 // 서버 경로 설정 (이미지 업로드 파일 접근)
 app.use("/uploads", express.static("uploads"));
 
-app.listen(PORT, () => console.log(`server is running on ${PORT}`)); // 서버실행 메세지
+app.listen(PORT, () => console.log(`server is running on ${PORT} / ver.0.1`)); // 서버실행 메세지
