@@ -26,7 +26,7 @@ app.use("/uploads", express.static("uploads"));
 
 
 app.get('/', (req, res) => {
-  res.send('running-hi deploy test ver 0.2');
+  res.send('runninghi-backend deploy complete.');
 });
 
 app.listen(PORT, () => console.log(`server is running on ${PORT}`)); // 서버실행 메세지
