@@ -6,13 +6,13 @@ const PORT = 8080;
 
 const app = express(); // express 모듈을 사용하기 위해 app 변수에 할당
 
-app.use(cors());
-// app.use(
-//   cors({
-//     origin: "http://localhost:3000",
-//     credentials: true,
-//   })
-// );
+// app.use(cors());
+app.use(
+  cors({
+    origin: "https://runninghifrontend.siinat.com",
+    credentials: true,
+  })
+);
 
 app.get("/", (request, response) => {
   response.send("Hello World test");
