@@ -15,8 +15,7 @@ app.use(
 );
 
 app.get("/", (request, response) => {
-  response.send("Running Hi Backend Api Server..");
-  response.send(process.env.REACT_APP_MY_DOMAIN);
+  response.send("Running Hi Backend Api Server...");
 });
 
 app.use(express.json());
