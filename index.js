@@ -9,12 +9,9 @@ const app = express(); // express 모듈을 사용하기 위해 app 변수에 �
 
 // app.use(cors());
 // console.log(process.env.MY_DOMAIN);
-
-const dev_doma = "http://localhost:3000";
-const pro_doma = 'https://runninghifrontend.siinat.com';
 app.use(
   cors({
-    origin: dev_doma,
+    origin: process.env.MY_DOMAIN,
     credentials: true,
   })
 );
