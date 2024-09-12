@@ -17,7 +17,7 @@ app.use(
 );
 
 app.get("/", (request, response) => {
-  response.send(process.env.MY_DOMAIN);
+  response.send("process.env.MY_DOMAIN");
 });
 
 app.use(express.json());
