@@ -8,7 +8,7 @@ const PORT = 8080;
 const app = express(); // express 모듈을 사용하기 위해 app 변수에 할당
 
 // app.use(cors());
-console.log(process.env.MY_DOMAIN);
+// console.log(process.env.MY_DOMAIN);
 app.use(
   cors({
     origin: process.env.MY_DOMAIN,
