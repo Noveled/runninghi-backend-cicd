@@ -9,13 +9,13 @@ const app = express(); // express 모듈을 사용하기 위해 app 변수에 �
 // app.use(cors());
 app.use(
   cors({
-    origin: `"${process.env.MY_DOMAIN}"`,
+    origin: "https://runninghifrontend.siinat.com",
     credentials: true,
   })
 );
 
 app.get("/", (request, response) => {
-  response.send(`"${process.env.MY_DOMAIN}"`);
+  response.send("Running Hi Backend Api Server...");
 });
 
 app.use(express.json());
