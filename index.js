@@ -9,7 +9,7 @@ const app = express(); // express 모듈을 사용하기 위해 app 변수에 �
 // app.use(cors());
 app.use(
   cors({
-    origin: "https://runninghibackend.siinat.com",
+    origin: "https://runninghifrontend.siinat.com",
     credentials: true,
   })
 );
