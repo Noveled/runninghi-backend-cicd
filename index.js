@@ -1,6 +1,7 @@
 const express = require("express"); // express 모듈 불러오기
 const cors = require("cors"); // cors 모듈 불러오기
 const cookieParser = require("cookie-parser");
+require("dotenv").config(); // .env 파일 사용 설정
 
 const PORT = 8080;
 
@@ -9,7 +10,7 @@ const app = express(); // express 모듈을 사용하기 위해 app 변수에 �
 // app.use(cors());
 app.use(
   cors({
-    origin: "https://runninghifrontend.siinat.com",
+    origin: process.env.REACT_APP_MY_DOMAIN,
     credentials: true,
   })
 );
