@@ -11,7 +11,7 @@ const app = express(); // express 모듈을 사용하기 위해 app 변수에 �
 console.log(process.env.MY_DOMAIN);
 app.use(
   cors({
-    origin: process.env.REACT_APP_MY_DOMAIN,
+    origin: 'https://runninghifrontend.siinat.com',
     credentials: true,
   })
 );
