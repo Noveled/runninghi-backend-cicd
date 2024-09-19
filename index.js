@@ -17,7 +17,7 @@ app.use(
 );
 
 app.get("/", (request, response) => {
-  response.send("running hi backend server");
+  response.send("running hi backend server!");
 });
 
 app.use(express.json());
