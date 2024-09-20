@@ -3,9 +3,8 @@
 <h2>[2024] RunningHi - Backend 🎮</h2>
 </div>
 
-RunningHi는 리액트 기반 웹 서비스로, 사용자가 지도 위에 마커를 등록하여 러닝 코스를 만들고 이를 다른 사용자와 공유할 수 있는 기능을 제공합니다. 이 프로젝트는 코드랩 AICC 3기 1차 팀 프로젝트로 진행되었으며, Runnect 프로젝트를 참고하여 제작되었습니다.  
-
-- 참고 프로젝트: [Runnect](https://github.com/Runnect/Runnect-Android) 🍀  
+RunningHi는 리액트 기반 웹 서비스로, 사용자가 지도 위에 마커를 등록하여 러닝 코스를 만들고 이를 다른 사용자와 공유할 수 있는 기능을 제공합니다. 이 프로젝트는 코드랩 AICC 3기 1차 팀 프로젝트로 진행되었으며, [Runnect](https://github.com/Runnect/Runnect-Android) 프로젝트를 참고하여 제작되었습니다. <br>
+RunningHi 의 Frontend 가 궁금하다면?
 - Frontend Repository: [RunningHi Frontend](https://github.com/Noveled/runninghi-frontend-cicd)  
 
 ## 목차
@@ -23,9 +22,34 @@ RunningHi는 리액트 기반 웹 서비스로, 사용자가 지도 위에 마�
 - **프로젝트 기간**: 2024.08.20 - 2024.09.20
 - **사용 기술**: `Node.js`, `PostgreSQL`
 - **팀 구성**: 김민식(팀장), 강민주, 손주현
+<table>
+  <tr>
+    <!-- first -->
+    <td align="center">
+      <a href="https://github.com/Noveled">
+        <img src="https://github.com/Noveled.png" width="100px;" alt="김민식"/><br />
+        <sub><b>김민식</b></sub>
+      </a>
+    </td>
+    <!-- second -->
+    <td align="center">
+      <a href="https://github.com/Noveled">
+        <img src="https://github.com/Noveled.png" width="100px;" alt="강민주"/><br />
+        <sub><b>강민주</b></sub>
+      </a>
+    </td>
+    <!-- third -->
+    <td align="center">
+      <a href="https://github.com/Noveled">
+        <img src="https://github.com/Noveled.png" width="100px;" alt="손주현"/><br />
+        <sub><b>손주현</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 - **Demo Link**: [RunningHi Backend](https://runninghibackend.siinat.com/)
 - **Architecture**:
-![백엔드 아키텍처](https://github.com/Noveled/runninghi-frontend-cicd/blob/main/src/assets/images/Recommend_001.PNG)
+![백엔드 아키텍처](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/backend_architecture.PNG)
 위 그림은 백엔드의 전체적인 구조를 보여주며, 배포와 CI/CD 기능까지 포함된 BackEnd 아키텍처를 나타냅니다.
 
 ---
@@ -33,17 +57,17 @@ RunningHi는 리액트 기반 웹 서비스로, 사용자가 지도 위에 마�
 ## 기능 설명
 RunningHi Backend는 다음과 같은 주요 기능들을 API로 제공합니다:
 
-|![코스 정보 요청 화면](https://github.com/Noveled/runninghi-frontend-cicd/blob/main/src/assets/images/Recommend_001.PNG)|![코스 정보 요청 화면](https://github.com/Noveled/runninghi-frontend-cicd/blob/main/src/assets/images/Recommend_001.PNG)|
+|![코스 정보 요청 화면](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/backend_get_course.PNG)|![편의시설 정보 요청 화면](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/backend_get_facilities.PNG)|
 |:---:|:---:|
-|**메인 화면**|**코스 정보 요청 화면**|
+|**코스 정보 요청 화면**|**편의시설 정보 요청 화면**|
 
-1. **코스 정보 요청** ⚔️  
+1. **코스 정보 요청**   
    - 코스명, 총거리, 등록자 정보 등 기본적인 CRUD 기능을 지원합니다.
 
-2. **유저 정보 요청** 🎯  
+2. **유저 정보 요청** 
    - 사용자 아이디, 비밀번호, 프로필 사진 등 기본적인 유저 정보를 다룹니다.
 
-3. **편의시설 정보 요청** 🎯  
+3. **편의시설 정보 요청** 
    - 시설별 위치 정보 및 시설 타입 조회를 제공합니다.
 
 4. **이미지 관리**  
@@ -138,7 +162,6 @@ GET /course?userId=123&isMarathon=true&isVisible=true
       "is_visible": true,
       "thumbnail_id": "https://example.com/thumbnail.jpg"
     },
-    ...
   ]
   ```
 
@@ -148,8 +171,6 @@ GET /course?userId=123&isMarathon=true&isVisible=true
     "error": "Error message"
   }
   ```
-
-
 
 - **GET /facilities** (편의시설 정보 조회)  
   주변 편의시설 정보를 가져오는 API의 로직입니다. 시설별 위치와 타입 정보를 반환하는 기능을 합니다.
@@ -165,11 +186,11 @@ GET /course?userId=123&isMarathon=true&isVisible=true
 코스 등록, 수정, 삭제의 CI/CD 플로우는 다음과 같습니다:
 
 **Flowchart 이미지**  
-![CICD01](https://github.com/Noveled/runninghi-frontend-cicd/blob/main/src/assets/images/Recommend_001.PNG)
-![CICD02](https://github.com/Noveled/runninghi-frontend-cicd/blob/main/src/assets/images/Recommend_001.PNG)
+![CICD01](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/rinninghi_cicd01.PNG)
+![CICD02](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/rinninghi_cicd02.PNG)
 **Flowchart 설명**  
 
-자세한 CI/CD 과정은 [신나 티스토리 블로그](#)에서 확인할 수 있습니다.
+자세한 CI/CD 과정은 제 블로그인 [신나 티스토리 블로그](#)에서 확인할 수 있습니다.
 
 ---
 
