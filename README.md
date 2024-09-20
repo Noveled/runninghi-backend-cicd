@@ -1,9 +1,10 @@
 # Running Hi Backend
 <div align="center">
-<h2>[2024] RunningHi - Backend 🎮</h2>
+<h2>[2024] RunningHi - Backend</h2>
 </div>
 
-RunningHi는 리액트 기반 웹 서비스로, 사용자가 지도 위에 마커를 등록하여 러닝 코스를 만들고 이를 다른 사용자와 공유할 수 있는 기능을 제공합니다. 이 프로젝트는 코드랩 AICC 3기 1차 팀 프로젝트로 진행되었으며, [Runnect](https://github.com/Runnect/Runnect-Android) 프로젝트를 참고하여 제작되었습니다. <br>
+RunningHi는 리액트 기반 웹 서비스로, 사용자가 지도 위에 마커를 등록하여 러닝 코스를 만들고 이를 다른 사용자와 공유할 수 있는 기능을 제공합니다. <br>
+이 프로젝트는 코드랩 AICC 3기 1차 팀 프로젝트로 진행되었으며, [Runnect](https://github.com/Runnect/Runnect-Android) 프로젝트를 참고하여 제작되었습니다. <br>
 RunningHi 의 Frontend 가 궁금하다면?
 - Frontend Repository: [RunningHi Frontend](https://github.com/Noveled/runninghi-frontend-cicd)  
 
@@ -33,20 +34,21 @@ RunningHi 의 Frontend 가 궁금하다면?
     </td>
     <!-- second -->
     <td align="center">
-      <a href="https://github.com/Noveled">
-        <img src="https://github.com/Noveled.png" width="100px;" alt="강민주"/><br />
+      <a href="https://github.com/mjk2024-dementia">
+        <img src="https://github.com/mjk2024-dementia.png" width="100px;" alt="강민주"/><br />
         <sub><b>강민주</b></sub>
       </a>
     </td>
     <!-- third -->
     <td align="center">
-      <a href="https://github.com/Noveled">
-        <img src="https://github.com/Noveled.png" width="100px;" alt="손주현"/><br />
+      <a href="https://github.com/sonjuhyeon">
+        <img src="https://github.com/sonjuhyeon.png" width="100px;" alt="손주현"/><br />
         <sub><b>손주현</b></sub>
       </a>
     </td>
   </tr>
 </table>
+
 - **Demo Link**: [RunningHi Backend](https://runninghibackend.siinat.com/)
 - **Architecture**:
 ![백엔드 아키텍처](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/backend_architecture.PNG)
@@ -189,7 +191,7 @@ GET /course?userId=123&isMarathon=true&isVisible=true
 ![CICD01](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/rinninghi_cicd01.PNG)
 ![CICD02](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/rinninghi_cicd02.PNG)
 **Flowchart 설명**  
-
+GitHub Actions 와 AWS EC2 를 이용하여 CI/CD 를 관리하고 있습니다. 
 자세한 CI/CD 과정은 제 블로그인 [신나 티스토리 블로그](#)에서 확인할 수 있습니다.
 
 ---
@@ -206,4 +208,3 @@ GET /course?userId=123&isMarathon=true&isVisible=true
 
 ## 레퍼런스
 - **Runnect**: [링크](https://github.com/Runnect/Runnect-Android)
-- **참고 블로그**: [링크](#)
