@@ -185,14 +185,14 @@ GET /course?userId=123&isMarathon=true&isVisible=true
 ---
 
 ## CI/CD 플로우 차트
-코스 등록, 수정, 삭제의 CI/CD 플로우는 다음과 같습니다:
+백엔드 CI/CD 플로우는 다음과 같습니다:
 
 **Flowchart 이미지**  
 ![CICD01](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/rinninghi_cicd01.PNG)
 ![CICD02](https://github.com/Noveled/runninghi-backend-cicd/blob/main/docs/images/rinninghi_cicd02.PNG)
 **Flowchart 설명**  
-GitHub Actions 와 AWS EC2 를 이용하여 CI/CD 를 관리하고 있습니다. 
-자세한 CI/CD 과정은 제 블로그인 [신나 티스토리 블로그](#)에서 확인할 수 있습니다.
+GitHub Actions 와 AWS EC2 를 이용하여 CI/CD 를 관리하고 있습니다. <br>
+자세한 과정은 제 블로그인 [신나 티스토리 블로그](https://siina.tistory.com/45)에서 확인할 수 있습니다.
 
 ---
 
